@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cash Flow APP</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+    <div>
+        <nav>
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMtlFoYajHq1AuRRChUQ4oQISSvqn1j5lGVw&usqp=CAU"
+                    height="64" alt="bat log" />
+                <p>Cash Flow</p>
+            </div>
+        </nav>
+        <main>
+            <div class="table-wrapper">
+                <table class="table" id="mytable">
+                    <thead class="table-head">
+                        <tr>
+                            <th>Date</th>
+                            <th>Reason</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr>
+                            <td>23-7-2023</td>
+                            <td>Lunch</td>
+                            <td>DEBIT</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>23-7-2023</td>
+                            <td>Lunch</td>
+                            <td>DEBIT</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>23-7-2023</td>
+                            <td>Lunch</td>
+                            <td>DEBIT</td>
+                            <td>80</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form">
+                <h3>Add Transaction Details</h3>
+                <div>
+                    <form id="transactionForm">
+                        <div class="form-fields">
+                            <label for="type">Type</label>
+                            <select name="type" id="type">
+                                <option value="DEBIT">DEBIT</option>
+                                <option value="CREDIT">CREDIT</option>
+                            </select>
+                        </div>
+                        <div class="form-fields">
+                            <label for="reason">Reason</label>
+                            <input type="text" name="reason" id="reason" />
+                        </div>
+                        <div class="form-fields">
+                            <label for="amount">Amount</label>
+                            <input type="number" name="amount" id="amount" />
+                        </div>
+                        <div class="button-area">
+                            <button class="button">Clear</button>
+                            <button class="button primary" form="transactionForm" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script src="src/app.js"> </script>
+</body>
+
+</html>
